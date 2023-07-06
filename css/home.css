@@ -1,0 +1,4 @@
+@import url(../base/_global.scss);
+body {
+  background-color: aquamarine;
+}
