@@ -1,5 +1,6 @@
 @import url(../base/_global.scss);
 body {
+<<<<<<< HEAD
   font-family: "Montserrat";
 }
 body .header__container {
@@ -563,3 +564,7 @@ footer .footer__container .footer__card ul li {
   margin: 10px;
   color: rgba(0, 0, 0, 0.632);
 }
+=======
+  background-color: aquamarine;
+}/*# sourceMappingURL=home.css.map */
+>>>>>>> 69de2a8fe059e807d73ad6792fbb44202ac2a42f
