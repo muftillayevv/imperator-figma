@@ -331,8 +331,6 @@
 
 #karta {
   background-color: #fafafa;
-  margin-top: 70px;
-  margin-bottom: 70px;
 }
 
 .karta__title {
@@ -356,6 +354,10 @@
   font-weight: 400;
   line-height: 32px;
 }
+.karta__img {
+  padding-top: 153px;
+  padding-bottom: 63px;
+}
 
 .karta__1cont {
   display: flex;
@@ -377,46 +379,14 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .karta__container{
+  .karta__container {
     flex-direction: column;
   }
 }
 
-
 /*footer*/
-.footer__title{
+.footer__title {
   color: var(--black, #000);
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 140%;
-    letter-spacing: 0.75px;
-    text-transform: uppercase;
-}
-
-.footer__text{
-    color: var(--black, #000);
-    font-size: 14px;
-    max-width: 265px;
-    font-weight: 400;
-    line-height: 160%;
-    letter-spacing: 0.25px;
-    margin-top: 16px;
-    margin-bottom: 15px;
-}
-
-.footer__tel{
-color: var(--black, #000);
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 160%;
-  letter-spacing: 0.25px;
-  margin-bottom: 10px;
-  text-decoration: none;
-}
-
-.footer__subtitle{
-color: var(--black, #000);
-margin-bottom: 10px;
   font-size: 14px;
   font-weight: 600;
   line-height: 140%;
@@ -424,16 +394,201 @@ margin-bottom: 10px;
   text-transform: uppercase;
 }
 
-.footer__cont2{
+.footer__text {
+  color: var(--black, #000);
+  font-size: 14px;
+  max-width: 265px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0.25px;
+  margin-top: 16px;
+  margin-bottom: 15px;
+}
+
+.footer__tel {
+  max-width: 130px;
+}
+
+.footer__subtitle {
+  color: var(--black, #000);
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+}
+
+.footer__cont {
   flex-direction: column;
 }
 
-.footer__email{
+.footer__span {
+  flex-direction: column;
+}
+
+.footer__contact {
+  max-width: 400px;
+}
+
+.footer__email {
+  max-width: 130px;
+}
+
+.subtitle {
+  margin-top: 38px;
+  margin-bottom: 10px;
+}
+
+.footer__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-top: 46px;
+  padding-bottom: 56px;
+}
+
+.sect2__subtitle {
   color: var(--black, #000);
-    font-size: 14px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.sect2__sentence {
+  color: var(--black, #000);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 160%;
+  letter-spacing: 0.25px;
+  margin-bottom: 10px;
+}
+
+.sect2 {
+  display: flex;
+  align-items: center;
+  gap: 173px;
+  padding-top: 46px;
+}
+
+.footer__container {
+  display: flex;
+  align-items: center;
+  gap: 210px;
+}
+
+.wrp__text {
+  max-width: 303px;
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrp__sentences {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 34px;
+  margin-bottom: 12px;
+}
+
+.wrp__wrapper {
+  margin-left: 520px;
+  margin-bottom: 36px;
+}
+
+.wrp__content{
+  display: flex;
+    align-items: center;
+    gap: 50px;
+    text-align: center;
+}
+
+.wrp__line{
+  max-width: 100%;
+  margin-bottom: 32px;
+}
+.wrp__word{
+  color: #000;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 160%;
-    letter-spacing: 0.25px;
-    margin-bottom: 10px;
-    text-decoration: none;
+    line-height: 24px;
+}
+
+.wrp__info{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+/* .wrp__cont2 {
+  /* margin-left: auto;
+  margin-right: auto;
+} */ */
+
+.wrp__cont1 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrp{
+  display: none;
+}
+
+.email{
+  color: #000;
+  text-decoration: none;
+  margin-left: 16px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+@media screen and (max-width:1000px) {
+  .wrp{
+    display: inline;
+  }
+
+  .wrp__wrapper{
+    margin-left: 400px;
+  }
+
+  .footer__cont{
+    display: none;
+  }
+    .footer__content {
+      display: none;
+    }
+    .sect2{
+      display: none;
+    }
+.wrp__info{
+  margin-left: auto;
+  margin-right: auto;
+}
+}
+
+@media screen and (max-width:750px) {
+  .wrp__wrapper {
+      margin-left: 300px;
+    }
+}
+
+@media screen and (max-width:550px) {
+  .wrp__wrapper {
+    margin-left: 200px;
+  }
+}
+
+@media screen and (max-width:450px) {
+  .wrp__wrapper {
+    margin-left: 100px;
+  }
 }
